@@ -1,0 +1,19 @@
+emp=int(input('Enter employee no:'))
+name=input('Enter employee name:')
+des=input('Enter Designation:')
+bs=int(input('Enter basic salary:'))
+da=int(input('Enter daily allowance:'))
+ta=int(input('Enter Travelling allowance:'))
+hr=int(input('Enter house rend allowances:'))
+net=bs+da+ta+hr
+if net>100000:
+    tax=(net*10)/100
+elif net>50000:
+    tax=(net*7)/100
+elif net>40000:
+    tax=(net*4)/100
+elif net>20000:
+    tax=(net*2)/100
+elif net<20000:
+    tax=0
+print('Employee Tax:',tax)

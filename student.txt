@@ -1,0 +1,10 @@
+no=int(input("Enter SNo:"))
+name=input('Name:')
+group=input('Group:')
+s1=int(input('Maths:'))
+s2=int(input('Physics:'))
+s3=int(input('CS:'))
+if s1>=35 and s2>=35 and s3>=35:
+    print('Pass')
+else:
+    print('Fail')
